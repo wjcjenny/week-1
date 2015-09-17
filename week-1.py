@@ -33,6 +33,10 @@ class Player:
     # [FILL IN YOUR VARIABLES HERE]
     playerid = 0
     playerpot = 0
+    '''
+    For giving a type of the variables, the id and the pot should be interges.
+    '''
+
 
     # in the __init__() function, use the two input variables to initialize the ID and starting pot of each player
     
@@ -40,6 +44,9 @@ class Player:
         # [CREATE YOUR INITIALIZATIONS HERE]
         self.playerid = inputID
         self.playerpot = startingPot
+        '''
+        NO MEANING for "self",just markable for  CLASS (__init__ function) !
+        '''
         
     # create a function for playing the game. This function should take on input for the card of the dealer.
     # it should then take a random card from 
@@ -47,6 +54,11 @@ class Player:
     def play(self, dealerCard):
         # [CREATE CODE FOR SELECTING A RANDOM CARD]
         playerCard = random.choice(cards)
+
+        '''
+        'dealerCard' here is a local variable for tracing/using this function.
+
+        '''
 
         # here we should have a conditional that tests the player's card value against the dealer card
         # and returns a statement saying whether the player won or lost the hand
